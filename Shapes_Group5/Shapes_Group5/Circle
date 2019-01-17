@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Shapes_Group5
+{
+    class Circle
+    {
+        private double Radius;
+        public Circle(double R)
+        {
+            this.Radius = R;
+        }
+
+
+        public void CalcCircle()
+        {
+            double Area =  3.14 * (Radius * Radius);
+            Console.Write(Area);
+        }
+    }
+}
