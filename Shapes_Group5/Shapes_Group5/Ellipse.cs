@@ -10,6 +10,7 @@ namespace Shapes_Group5
 
         public Ellipse() {
             this.getInputs();
+            this.getArea();
         }
         public Ellipse(double a, double b) {
             this.a = a;
@@ -22,9 +23,9 @@ namespace Shapes_Group5
         public void getInputs() {
 
             Console.WriteLine("Please enter th ex-value: ");
-           this.a= Convert.ToDouble(Console.Read());
+           this.a= Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please enter th ex-value: ");
-            this.b = Convert.ToDouble(Console.Read());
+            this.b = Convert.ToDouble(Console.ReadLine());
 
 }
     }
