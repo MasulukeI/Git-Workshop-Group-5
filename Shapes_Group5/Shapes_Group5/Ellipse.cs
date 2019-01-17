@@ -6,7 +6,7 @@ namespace Shapes_Group5
 {
     class Ellipse
     {
-        double a, b;
+        double a, b, c, d;
 
         public Ellipse() {
             this.getInputs();
