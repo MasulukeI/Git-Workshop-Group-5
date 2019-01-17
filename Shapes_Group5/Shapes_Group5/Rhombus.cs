@@ -8,15 +8,24 @@ namespace Shapes_Group5
     {
         int _length;
         int _altitude;
-        public Rhombus(int length, int altitude)
+        public Rhombus()
         {
-            _length = length;
-            _altitude = altitude;
+            readRhombusInputs();
+            getRhombusArea();
         }
 
-        public int getRhombuArea()
+        public void getRhombusArea()
         {
-            return _length * _altitude;
+            Console.WriteLine( (_length * _altitude).ToString());
+        }
+
+        public void readRhombusInputs()
+        {
+            Console.WriteLine("Give the length of the rhombus");
+            _length = Convert.ToInt32( Console.ReadLine());
+
+            Console.WriteLine("Give the altitude or height of the rhombus");
+            _altitude = Convert.ToInt32( Console.ReadLine());
         }
     }
 }
