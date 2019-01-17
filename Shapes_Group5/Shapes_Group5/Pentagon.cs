@@ -6,23 +6,32 @@ namespace Shapes_Group5
 {
     class Pentagon
     {
-        private float a;
-        private float r;
+        private int a;
+        private int r;
         public  float area;
         public float Perimeter;
-        
-      
-        Pentagon(float a, float r)
+
+        Pentagon() {
+            Inputs();
+            CalArea();
+            CalPerimeter();
+        }
+        Pentagon(int a, int r)
         {
             this.a = a;
             this.r = r;
-        
-        
         }
 
         public void CalArea() {
             area = (5 * r * a) / 2;
             Console.WriteLine("Area:" + area.ToString());
+
+        }
+        public void Inputs() {
+            Console.WriteLine("Enter r : ");
+            r = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a : ");
+            a = Int32.Parse(Console.ReadLine());
 
         }
         public void CalPerimeter (){
