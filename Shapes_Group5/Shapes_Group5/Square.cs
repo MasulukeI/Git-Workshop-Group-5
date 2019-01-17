@@ -7,24 +7,33 @@ namespace Shapes_Group5
     class Square
     {
         int area = 0;
+        int length = 0;
+        int width = 0;
         public Square()
         {
-            int length = 0;
-            int width = 0;
-            Console.WriteLine("Provide the length of the square");
-            length = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Provide the width of the square");
-            width = Convert.ToInt32(Console.ReadLine());
+
+            InsertSquare();
             
             int area = 0;
 
             area = calcSquareArea(length, width);
 
-            Console.WriteLine("the are is: " + area);
-            Console.ReadLine();
+            Display();
 
         }
+        private void Display()
+        {
+            Console.WriteLine("the area is: " + area);
+            Console.ReadLine();
+        }
+        private void InsertSquare()
+        {
+            Console.WriteLine("Provide the length of the square");
+            length = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Provide the width of the square");
+            width = Convert.ToInt32(Console.ReadLine());
 
+        }
         public int calcSquareArea(int length, int width)
         {
 

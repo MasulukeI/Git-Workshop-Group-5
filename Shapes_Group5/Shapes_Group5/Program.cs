@@ -8,8 +8,9 @@ namespace Shapes_Group5
         {
             Triangle triangle1 = new Triangle(10, 10);
             Console.WriteLine(triangle1.area());
-            Console.Read();
             Square S = new Square();
+            Rhombus R = new Rhombus();
+            Console.Read();
         }
     }
 }
