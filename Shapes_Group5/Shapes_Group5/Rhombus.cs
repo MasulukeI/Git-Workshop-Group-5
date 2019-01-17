@@ -16,7 +16,7 @@ namespace Shapes_Group5
 
         public void getRhombusArea()
         {
-            Console.WriteLine( (_length * _altitude).ToString());
+            Console.WriteLine("The area is: " + (_length * _altitude).ToString());
         }
 
         public void readRhombusInputs()
