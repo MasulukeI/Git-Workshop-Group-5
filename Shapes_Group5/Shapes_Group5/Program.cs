@@ -7,6 +7,7 @@ namespace Shapes_Group5
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Square S = new Square();
         }
     }
 }
