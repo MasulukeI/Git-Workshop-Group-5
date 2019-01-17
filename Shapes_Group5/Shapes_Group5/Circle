@@ -6,17 +6,13 @@ namespace Shapes_Group5
 {
     class Circle
     {
-        private double Radius;
-        public Circle(double R)
-        {
-            this.Radius = R;
-        }
-
-
+      
         public void CalcCircle()
         {
-            double Area =  3.14 * (Radius * Radius);
-            Console.Write(Area);
+            Console.Write("What is the radius of your circle: ");
+            double Radius = Convert.ToDouble(Console.ReadLine());
+            double Area = 3.14 * (Radius*Radius);
+            Console.WriteLine(Area);
         }
     }
 }
