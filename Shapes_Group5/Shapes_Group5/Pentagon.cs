@@ -10,19 +10,24 @@ namespace Shapes_Group5
         private float r;
         public  float area;
         public float Perimeter;
+        
       
         Pentagon(float a, float r)
         {
-            a = this.a;
-            a = this.r;
+            this.a = a;
+            this.r = r;
+        
+        
         }
 
-        public void CalArea(float a, float r) {
+        public void CalArea() {
             area = (5 * r * a) / 2;
+            Console.WriteLine("Area:" + area.ToString());
 
         }
         public void CalPerimeter (){
             Perimeter = 5 * a;
+            Console.WriteLine("Perimater:" + Perimeter.ToString());
         }
 
 
